@@ -51,10 +51,12 @@ public class Campo {
 	
 	public void alternarMarcacao() {
 		if(!aberto) {
-			marcado = !aberto;
+			marcado = !marcado;
 			
 			if(marcado) {
 				notificarObservadores(CampoEvento.MARCAR);
+			} else {
+				notificarObservadores(CampoEvento.DESMARCAR);
 			}
 		}
 	}
