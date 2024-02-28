@@ -100,13 +100,10 @@ public class CampoBotao extends JButton
 		case 3:
 			setForeground(Color.YELLOW);
 		case 4:
-		case 5:
-		case 6:
 			setForeground(Color.RED);
 			break;
 		default:
-			setForeground(Color.RED);
-			break;
+			
 		}
 		
 		String valor = !campo.vizinhancaSegura() ?
@@ -114,7 +111,7 @@ public class CampoBotao extends JButton
 		setText(valor);
 	}
 	
-	//Interface ação do mouse
+	//Interface aÃ§Äƒo do mouse
 	@Override
 	public void mousePressed(MouseEvent e) {
 		if(e.getButton() == 1) {
@@ -125,7 +122,7 @@ public class CampoBotao extends JButton
 	}
 
 	
-	// Setar outras funcoes de click mesmo sem utiliza-las pois irá dar erro
+	// Setar outras funcoes de click mesmo sem utiliza-las pois irÃ¡ dar erro
 	public void mouseClicked(MouseEvent e) {}
 	public void mouseEntered(MouseEvent e) {}
 	public void mouseReleased(MouseEvent e) {}
